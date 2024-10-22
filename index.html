@@ -9,9 +9,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #2f2f2f;
-            color: #f0f0f0;
+            background-color: #333;  /* Dark background */
+            color: #f0f0f0;  /* Light text */
         }
+
 
         header {
             background-color: #333;
@@ -66,14 +67,14 @@
             margin-bottom: 10px;
         }
 
-        .social-links {
-            margin-top: 10px;
+        .social-links a {
+            color: #1E90FF;  /* DodgerBlue links */
+            margin-right: 10px;
+            text-decoration: none;
         }
 
-        .social-links a {
-            margin-right: 10px;
-            color: #f0f0f0;
-            text-decoration: none;
+        .social-links a:hover {
+            color: #FF4500;  /* OrangeRed on hover */
         }
 
         .welcome {
@@ -81,17 +82,16 @@
             text-align: center;
         }
 
-        .welcome p {
-            font-size: 1.2em;
-            color: #ddd;
+        .welcome p a {
+            color: #1E90FF;
         }
 
         footer {
-            background-color: #333;
+            background-color: #1E90FF;
             text-align: center;
             padding: 10px;
             margin-top: 50px;
-            color: #ccc;
+            color: #f0f0f0;
         }
 
     </style>
