@@ -38,6 +38,7 @@
             font-size: 2em;
         }
 
+/* 设置导航栏的样式 */
 nav {
     background-color: #333;
     padding: 10px;
@@ -60,13 +61,7 @@ nav button:hover, nav a:hover {
     color: black;
 }
 
-
-        /* Container for dropdown */
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
+/* Dropdown 样式 */
 .dropdown {
     display: inline-block;
     position: relative;
@@ -93,15 +88,22 @@ nav button:hover, nav a:hover {
     background-color: #ddd;
 }
 
+/* 下拉菜单在鼠标悬停时显示 */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+/* 在鼠标悬停时改变下拉按钮的背景色和字体颜色 */
 .dropdown:hover .dropbtn {
     background-color: #ddd;
     color: black;
 }
-        .container {
+
+/* 确保导航项排列方式不被打乱 */
+nav button, .dropdown {
+    margin: 0 5px;
+}
+   .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
@@ -189,22 +191,24 @@ button:hover {
 <header>
     <nav>
         <button type="button" onclick="loadContent('about')">About me</button>
+        
         <div class="dropdown">
             <button class="dropbtn">Research areas
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Superconductors</a>
-                <a href="#">Transition metal dichalcogenides</a>
-                <a href="#">Insulators</a>
-                <a href="#">Magnetic materials</a>
-                <a href="#">Machine learning</a>
-                <a href="#">Acoustics</a>
+                <a href="#" onclick="loadContent('superconductors')">Superconductors</a>
+                <a href="#" onclick="loadContent('tmds')">Transition metal dichalcogenides</a>
+                <a href="#" onclick="loadContent('insulators')">Insulators</a>
+                <a href="#" onclick="loadContent('magnetic_materials')">Magnetic materials</a>
+                <a href="#" onclick="loadContent('machine_learning')">Machine learning</a>
+                <a href="#" onclick="loadContent('acoustics')">Acoustics</a>
             </div>
-        </div> 
+        </div>
+
         <button type="button" onclick="loadContent('research')">Research</button>
         <button type="button" onclick="loadContent('publications')">Publications</button>
-        <button type="button" onclick="loadContent('contact')">Curriculum Vitae</button>        
+        <button type="button" onclick="loadContent('contact')">Curriculum Vitae</button>
     </nav>
 </header>
 
