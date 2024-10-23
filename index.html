@@ -174,28 +174,38 @@
         }
 
     </style>
+    <script>
+        function loadContent(section) {
+            const contentDiv = document.getElementById('content');
+            if (section === 'about') {
+                contentDiv.innerHTML = '<h2>About me</h2><p>This is the About me section. You can put your content here.</p>';
+            } else if (section === 'raman') {
+                contentDiv.innerHTML = '<h2>Raman Training</h2><p>This is the Raman Training section. You can put your content here.</p>';
+            }
+        }
+    </script>
 </head>
 <body>
 
 <header>
     <nav>
+        <button onclick="loadContent('about')">About me</button>
+        <button onclick="loadContent('raman')">Raman Training</button>
         <a href="about_me.html" target="_blank">About me</a>
         <div class="dropdown">
-         <button class="dropbtn">Raman Training 
+         <button class="dropbtn">Research areas
            <i class="fa fa-caret-down"></i>
          </button>
          <div class="dropdown-content">
-           <a href="#">Energy-wavelength Converter</a>
-           <a href="#">Ruby Pressure</a>
-           <a href="#">MEC VISAR time calculator</a>
-           <a href="#">LULI VISAR time calculator</a>
-           <a href="#">Pressure units</a>
-           <a href="#">VISAR tiff reader</a>
-           <a href="#">X-ray diffraction toolbox</a>
-           <a href="#">d-spacing calculator</a>
+           <a href="#">Superconductors</a>
+           <a href="#">Transition metal dichalcogenides</a>
+           <a href="#">Insulators</a>
+           <a href="#">Magnetic materials</a>
+           <a href="#">Machine learning</a>
+           <a href="#">Acoustics</a>
          </div>
         </div> 
-        <a href="#">Raman Training</a>
+        <a href="publication.html">Publications</a>
         <a href="#">High Pressure Calculator</a>
         <a href="#">News</a>
         <a href="#">Curriculum Vitae</a>
@@ -221,6 +231,9 @@
         <p>Hello and welcome!</p>
         <p>You can contact me at <a href="mailto:phyzp20130521@gmail.com">phyzp20130521@gmail.com</a></p>
     </div>
+<div id="content">
+    <p>Click a button to load content.</p>
+</div>
 </div>
 
 <footer>
