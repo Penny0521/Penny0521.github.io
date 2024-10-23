@@ -155,6 +155,10 @@
         h2 {
             margin-top: 30px;
         }
+        h3 {
+            font-size: 1.5em;
+            color: #f39c12;
+        }
 
         p {
             margin: 5px 0;
@@ -191,17 +195,34 @@
             color: #e67e22;
         }
 
+        .resume-section {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .resume-section .date {
+            width: 25%;
+            font-style: italic;
+            color: #bbb;
+        }
+
+        .resume-section .content {
+            width: 75%;
+        }
+
+        .content strong {
+            font-size: 1.2em;
+        }
+
+        .content em {
+            font-style: italic;
+            color: #ccc;
+        }
+
         footer {
             margin-top: 50px;
             text-align: center;
             color: #888;
-
-        footer {
-            background-color: #000000;
-            text-align: center;
-            padding: 10px;
-            margin-top: 50px;
-            color: #f0f0f0;
         }
     </style>
 </head>
@@ -326,15 +347,28 @@
          </ul>
             </p>`,
         'contact': `
-            <h2>Curriculum Vitae</h2>
             <p>    
-            <h1>Pan Zhang</h1>
-    <h2 class="section-title">Education</h2>
-    <p><strong>09/2012–06/2017</strong> Ph.D. in Condensed Matter Physics, Zhejiang University, Hangzhou.</p>
-    <p>Dissertation title: ”Magnetism and Superconductivity in Eu-based Compounds”</p>
-    <p>Advisor: Prof. Zhu-An Xu, Condensed Matter Physics Chair</p>
+                <h1>Pan Zhang</h1>
 
-    <p><strong>09/2007–06/2011</strong> B.Sc in Physics, Ningbo University, Ningbo.</p>
+    <h2 class="section-title">Education</h2>
+
+    <!-- 教育部分 -->
+    <div class="resume-section">
+        <div class="date">09/2012–06/2017</div>
+        <div class="content">
+            <strong>Ph.D in Condensed Matter Physics</strong>, Department of Physics, Zhejiang University, Hangzhou.<br>
+            <em>Dissertation title</em>: ”Magnetism and Superconductivity in Eu-based Compounds”<br>
+            <em>Advisor</em>: Prof. Zhu-An Xu, Condensed Matter Physics Chair, Zhejiang University.
+        </div>
+    </div>
+
+    <div class="resume-section">
+        <div class="date">09/2007–06/2011</div>
+        <div class="content">
+            <strong>B.Sc in Physics</strong>, Department of Physics, Ningbo University, Ningbo.
+        </div>
+    </div>
+
 
     <h2 class="section-title">Skills</h2>
     <ul>
