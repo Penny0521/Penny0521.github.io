@@ -24,7 +24,7 @@
             color: #3498db; /* 蓝色 */
         }
         header {
-            background-color：#F5F5F5;
+            background-color: #F5F5F5; /* 修正背景颜色 */
             padding: 20px;
             text-align: center;
         }
@@ -165,6 +165,8 @@
             padding: 10px;
             margin-top: 50px;
             color: #f0f0f0;
+        }
+
         section {
             margin-top: 50px;
             padding: 20px;
@@ -174,24 +176,6 @@
         }
 
     </style>
-<script>
-    const contentData = {
-        'about': '<h2>About me</h2><p>This is the About me section. You can put your content here.</p>',
-        'raman': '<h2>Raman Training</h2><p>This is the Raman Training section. You can put your content here.</p>',
-        'research': '<h2>Research</h2><p>This is the Research section. Here you can detail your ongoing and past research projects.</p>',
-        'publications': '<h2>Publications</h2>
-                    <p>Junqi He, Yi Zhou, Hui-Fei Zhai∗, Pan Zhang∗ Machine learning assisted fast optical identification of 2D materials, 
-                     submitted to Nano Letters 2024.</p>
-            
-            <p>This is the Publications section. You can list your papers or books here.</p>',
-        'contact': '<h2>Contact</h2><p>You can contact me at <a href="mailto:phyzp20130521@gmail.com">phyzp20130521@gmail.com</a></p>',
-    };
-
-    function loadContent(section) {
-        const contentDiv = document.getElementById('content');
-        contentDiv.innerHTML = contentData[section] || '<p>Content not available.</p>';
-    }
-</script>
 </head>
 <body>
 
@@ -203,11 +187,11 @@
         <button onclick="loadContent('publications')">Publications</button>
         <button onclick="loadContent('contact')">Contact</button>
 
-        <a href="about_me.html" target="_blank">About me</a>
+        <a href="about_me.html">About me</a>
         
         <div class="dropdown">
             <button class="dropbtn">Research areas
-                <i class="fa fa-caret-down"></i> <!-- Ensure Font Awesome is included -->
+                <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
                 <a href="#">Superconductors</a>
@@ -251,10 +235,30 @@
     </div>
 </div>
 
+<script>
+    // Content data for each section
+    const contentData = {
+        'about': '<h2>About me</h2><p>This is the About me section. You can put your content here.</p>',
+        'raman': '<h2>Raman Training</h2><p>This is the Raman Training section. You can put your content here.</p>',
+        'research': '<h2>Research</h2><p>This is the Research section. Here you can detail your ongoing and past research projects.</p>',
+        'publications': `
+            <h2>Publications</h2>
+            <p>Junqi He, Yi Zhou, Hui-Fei Zhai∗, Pan Zhang∗ Machine learning assisted fast optical identification of 2D materials, 
+            submitted to Nano Letters 2024.</p>
+            <p><strong>Note:</strong> ∗ denotes equal contribution.</p>`,
+        'contact': '<h2>Contact</h2><p>You can contact me at <a href="mailto:phyzp20130521@gmail.com">phyzp20130521@gmail.com</a></p>',
+    };
+
+    // Function to load content dynamically
+    function loadContent(section) {
+        const contentDiv = document.getElementById('content');
+        contentDiv.innerHTML = contentData[section] || '<p>Content not available.</p>';
+    }
+</script>
+
 <footer>
     <p>&copy; 2024 Pan Zhang</p>
 </footer>
-
 
 </body>
 </html>
