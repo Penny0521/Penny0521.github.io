@@ -13,18 +13,13 @@
             color: #f0f0f0;  /* Light text */
         }
 
-        .custom-text {
-            font-family: Baskerville Old Face, sans-serif;
-            font-size: 24px; /* 设置字体大小 */
-            color: #ff5733;  /* 设置字体颜色为橙色 */
-        }
-
         /* 为小标题设置样式 */
         h2.custom-title {
             font-family: Baskerville Old Face, sans-serif;
             font-size: 28px;
             color: #3498db; /* 蓝色 */
         }
+
         header {
             background-color: transparent; /* 修正背景颜色 */
             padding: 10px;
@@ -33,127 +28,80 @@
         }
 
         header h1 {
-            font-family: Baskerville Old Face, sans-serif;
             margin: 0;
             font-size: 2em;
         }
 
-/* 设置导航栏的样式 */
-nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-}
+        /* 设置导航栏的样式 */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
 
-nav button, nav a {
-    color: white;
-    background: none;
-    border: none;
-    text-decoration: none;
-    padding: 14px 16px;
-    font-size: 17px;
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
-}
+        nav button, nav a {
+            color: white;
+            background: none;
+            border: none;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 17px;
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: middle;
+        }
 
-nav button:hover, nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
+        nav button:hover, nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
-/* Dropdown 样式 */
-.dropdown {
-    display: inline-block;
-    position: relative;
-}
+        /* Dropdown 样式 */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
 
-/* 下拉菜单在鼠标悬停时显示 */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+        /* 下拉菜单在鼠标悬停时显示 */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
-/* 在鼠标悬停时改变下拉按钮的背景色和字体颜色 */
-.dropdown:hover .dropbtn {
-    background-color: #ddd;
-    color: black;
-}
+        /* 在鼠标悬停时改变下拉按钮的背景色和字体颜色 */
+        .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
 
-/* 确保导航项排列方式不被打乱 */
-nav button, .dropdown {
-    margin: 0 5px;
-    display: inline-block;
-}
-   .container {
+        .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
 
-        .profile {
-            display: flex;
-            align-items: center;
-            margin-top: 50px;
-        }
-
-        .profile img {
-            max-width: 300px;
-            border-radius: 10px;
-            margin-right: 30px;
-        }
-
-        .profile .info {
-            flex: 1;
-        }
-
-        .profile h2 {
-            margin-top: 0;
-            font-size: 2em;
-        }
-
-        .profile p {
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
-
-        .social-links a {
-            color: #1E90FF;  /* DodgerBlue links */
-            margin-right: 10px;
-            text-decoration: none;
-        }
-
-        .social-links a:hover {
-            color: #FF4500;  /* OrangeRed on hover */
-        }
-
-        .welcome {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .welcome p a {
-            color: #1E90FF;
+        .content-section {
+            display: block;
         }
 
         footer {
@@ -163,29 +111,6 @@ nav button, .dropdown {
             margin-top: 50px;
             color: #f0f0f0;
         }
-
-        section {
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #f0f0f0;
-            color: #333;
-            border-radius: 10px;
-        }
-         button {
-    font-family: Baskerville Old Face, sans-serif;
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-button:hover {
-    background-color: #ddd;
-    color: black;
-}
     </style>
 </head>
 <body>
@@ -193,7 +118,7 @@ button:hover {
 <header>
     <nav>
         <button type="button" onclick="loadContent('about')">About me</button>
-        
+
         <div class="dropdown">
             <button class="dropbtn">Research areas
                 <i class="fa fa-caret-down"></i>
@@ -214,67 +139,67 @@ button:hover {
     </nav>
 </header>
 
-<div class="container">
-    <div class="profile">
-        <img src="IMG_0099.jpg" alt="Photo of Pan Zhang">
-        <div class="info">
-            <h2>Pan Zhang (张攀)</h2>
-            <p>Research interests: solid state material design & synthesis & measurements for both 3D and 2D.</p>
-            <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">ORCID</a>
-                <a href="#">Wikipedia</a>
-                <p><a href="https://scholar.google.com.hk/citations?user=zbVrfOoAAAAJ&hl=zh-TW">Link </a>to my husband</p>
+<!-- 内容显示区域 -->
+<div id="content-container" class="container">
+    <div id="content-section" class="content-section">
+        <div class="profile">
+            <img src="IMG_0099.jpg" alt="Photo of Pan Zhang" style="max-width: 300px; border-radius: 10px; margin-right: 30px;">
+            <div class="info">
+                <h2>Pan Zhang (张攀)</h2>
+                <p>Research interests: solid state material design & synthesis & measurements for both 3D and 2D.</p>
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">ORCID</a>
+                    <a href="#">Wikipedia</a>
+                    <p><a href="https://scholar.google.com.hk/citations?user=zbVrfOoAAAAJ&hl=zh-TW">Link</a> to my husband</p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="welcome">
-        <p>Hello and welcome!</p>
-        <p>You can contact me at <a href="mailto:phyzp20130521@gmail.com">phyzp20130521@gmail.com</a></p>
-    </div>
-
-    <div id="content">
-        <p>Click a button to load content.</p>
     </div>
 </div>
 
 <script>
     // Content data for each section
     const contentData = {
-       'about': `
-             <h2>About me</h2>
-             <section id="section1">
+        'about': `
+            <h2>About me</h2>
+            <section id="section1">
                 <h2 class="custom-title">Introduction</h2>
-                <p> Hello there! I'm a researcher passionate about new material exploration and synthesis with a particular focus on nano-fracturing and utilizing advanced techniques to study and create
-                 materials like superconductors, magnetic materials, strongly correlated systems, functional materials, and semiconductors. My work
-                 spans across both 3D and 2D systems, delving deep into the fascinating world of quantum materials and their intricate behaviors.</p>
-    
-               <h2 class="custom-title">Research</h2>
-               <p>In my research, I specialize in investigating the crystal structure and local atomic arrangements of novel crystals. These structural studies are key to understanding the phase transitions that materials undergo, whether it’s related to changes in crystal structures, the emergence of charge or spin density waves, or the appearance of nematic and magnetic orders. Exploring how materials transition through various states is fundamental to discovering new properties and functions.
-                  I also manipulate low-dimensional quantum materials through both physical and chemical means, which allows us to finely tune their behaviors and properties. These efforts aim to understand and control anomalous phenomena such as the quantum and nonlinear anomalous Hall effects and the anomalous thermal Hall effect of phonons in both topological materials like TMDs (transition metal dichalcogenides), semimetals, and insulating materials, whether they are 3D or 2D in nature.
-                  Moreover, I'm particularly intrigued by the novel quantum states that emerge from the formation of moiré superlattices in van der Waals heterostructures, where the periodic potential can induce extraordinary electronic behaviors. Understanding the properties of 2D materials and improving their device performance is a crucial aspect of my work, especially with their potential applications in next-generation technology.
-                  In addition, I am exploring the phonon behavior in some unique 3D insulators, which can shed light on their thermal properties and their relevance to future technological innovations. Through these investigations, I aim to unlock the functional properties of these materials and uncover their potential applications in fields ranging from energy storage to advanced electronics.</p>
-
-               <h2 class="custom-title">Other Interests</h2>
-               <p>In addition to my research, I am passionate about science outreach, especially for younger audiences. I enjoy demonstrating experiments like magnetic levitation using superconductors to inspire interest in physics.Join me in this exciting journey of exploring quantum materials and functional systems, and together, we may uncover the fundamental secrets that will drive the next wave of technological revolutions!</p>
-            </section>
-         `,
-
-        'raman': '<h2>Research areas</h2><p>This is the Raman Training section. You can put your content here.</p>',
-        'research': '<h2>Research</h2><p>This is the Research section. Here you can detail your ongoing and past research projects.</p>',
+                <p>Hello there! I'm a researcher passionate about new material exploration and synthesis with a particular focus on nano-fracturing and utilizing advanced techniques to study and create materials like superconductors, magnetic materials, strongly correlated systems, functional materials, and semiconductors. My work spans across both 3D and 2D systems, delving deep into the fascinating world of quantum materials and their intricate behaviors.</p>
+            </section>`,
+        'superconductors': `
+            <h2>Superconductors</h2>
+            <p>Superconductors are materials that conduct electricity without resistance below a critical temperature. Research in this area explores the discovery and properties of superconducting materials.</p>`,
+        'tmds': `
+            <h2>Transition Metal Dichalcogenides</h2>
+            <p>Transition metal dichalcogenides (TMDs) are a family of materials with interesting electronic and optical properties, widely studied for their potential applications in devices such as transistors and solar cells.</p>`,
+        'insulators': `
+            <h2>Insulators</h2>
+            <p>Insulators are materials that resist the flow of electricity. Research on insulators involves understanding their structural and electronic properties.</p>`,
+        'magnetic_materials': `
+            <h2>Magnetic Materials</h2>
+            <p>Magnetic materials are critical in many modern technologies, including data storage and medical imaging devices. Research explores their magnetic behavior and potential applications.</p>`,
+        'machine_learning': `
+            <h2>Machine Learning</h2>
+            <p>Machine learning techniques are used to predict material properties and discover new materials more efficiently. This is an exciting intersection of artificial intelligence and materials science.</p>`,
+        'acoustics': `
+            <h2>Acoustics</h2>
+            <p>Acoustics research involves studying sound waves and their interactions with materials, which has applications in sensors, audio devices, and more.</p>`,
+        'research': `
+            <h2>Research</h2>
+            <p>This is the Research section. Here you can detail your ongoing and past research projects.</p>`,
         'publications': `
             <h2>Publications</h2>
-            <p>Junqi He, Yi Zhou, Hui-Fei Zhai∗, Pan Zhang∗ Machine learning assisted fast optical identification of 2D materials, 
-            submitted to Nano Letters 2024.</p>
-            <p><strong>Note:</strong> ∗ denotes equal contribution.</p>`,
-        'contact': '<h2>Contact</h2><p>You can contact me at <a href="mailto:phyzp20130521@gmail.com">phyzp20130521@gmail.com</a></p>',
+            <p>Junqi He, Yi Zhou, Hui-Fei Zhai∗, Pan Zhang∗ Machine learning assisted fast optical identification of 2D materials, submitted to Nano Letters 2024.</p>`,
+        'contact': `
+            <h2>Contact</h2>
+            <p>You can contact me at <a href="mailto:phyzp20130521@gmail.com">phyzp20130521@gmail.com</a></p>`
     };
 
     // Function to load content dynamically
     function loadContent(section) {
-        const contentDiv = document.getElementById('content');
-        contentDiv.innerHTML = contentData[section] || '<p>Content not available.</p>';
+        const contentSection = document.getElementById('content-section');
+        contentSection.innerHTML = contentData[section] || '<p>Content not available.</p>';
     }
 </script>
 
@@ -284,3 +209,4 @@ button:hover {
 
 </body>
 </html>
+
