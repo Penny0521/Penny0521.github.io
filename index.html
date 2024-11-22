@@ -96,6 +96,13 @@ on<!DOCTYPE html>
             text-align: left;
         }
 
+        .dropdown-content img {
+            width: 180px;
+            height:200px;
+            border-radius: 10px;
+            margin-right: 30px; 
+            text-align: center;
+        }
         .dropdown-content a:hover {
             background-color: #ddd;
         }
@@ -362,9 +369,12 @@ li {
 
         'superconductors': `
             <h2 class="custom-title">Superconductors</h2>
-            <p>Superconductors are materials that conduct electricity without resistance below a critical temperature. Research in this area explores the discovery and properties of superconducting materials.</p>
-            <img src="superconductivity.png" alt="Photo of superconducting transition" style="max-width: 300px; border-radius: 10px; margin-right: 30px;">
             
+            <p>Superconductors are materials that conduct electricity without resistance below a critical temperature. Research in this area explores the discovery and properties of superconducting materials.</p>
+            <div class="dropdown-content">
+            <img src="superconductivity.png" alt="Photo of superconducting transition" style="max-width: 300px; border-radius: 10px; margin-right: 30px;">
+            <img src="meissner-effect.png" alt="Photo of meissner-effect" style="max-width: 300px; border-radius: 10px; margin-right: 30px;">
+            </div>
             
             
             `,
